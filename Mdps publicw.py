@@ -9,14 +9,14 @@ import streamlit as st
 from streamlit_option_menu import option_menu
 
 # Loading the saved models correctly
-with open('C:/Users/prate/OneDrive/Desktop/Multiple_diseas_pridiction_system/Saved models/diabetes_model.sav', 'rb') as file:
+with open('diabetes_model.sav', 'rb') as file:
     diabetes_model = pickle.load(file)
 
-with open('C:/Users/prate/OneDrive/Desktop/Multiple_diseas_pridiction_system/Saved models/heart_disease_model.sav', 'rb') as file:
-    heart_diseas_model = pickle.load(file)
+with open('heart_disease_model.sav', 'rb') as file:
+    heart_disease_model = pickle.load(file)
 
-with open('C:/Users/prate/OneDrive/Desktop/Multiple_diseas_pridiction_system/Saved models/parkinsons_model.sav', 'rb') as file:
-    Parkinson_diseas_model = pickle.load(file)
+with open('parkinsons_model.sav', 'rb') as file:
+    parkinsons_model = pickle.load(file)
 
 # Sidebar for navigation
 with st.sidebar:
